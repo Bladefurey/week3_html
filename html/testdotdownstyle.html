@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing Menu Bar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <style>
+            *{
+                margin:0;
+            }
+            nav{
+                background-color:blanchedalmond;
+                position:fixed;
+                width:100%;
+                height:80px;
+            }
+            
+            nav #dep li{
+                list-style:none;
+                float:left;
+                padding-left:20px;
+                padding-top:30px;
+            }
+            nav #dep li a{
+                text-decoration:none;
+                display:block;
+            }
+            nav #dep li a:hover{
+                background-color:orangered;
+            }
+            #de{
+                display:none;
+            }
+            #dep li:hover #de{
+                display:block;
+            }
+            #de li{
+                clear:left;
+            }
+            #de li a{
+                display:block;
+                padding:0;
+                border-bottom:2px solid black;
+            }
+            #de #row a:hover{
+                background-color:orange;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul id="dep">
+                <li><a href="#"><i class="fa fa-home">&nbsp;&nbsp;HOME</i></a></li>
+                <li><a href="#"><i class="fa fa-user-secret">&nbsp;&nbsp;ABOUT US</i></i></li>
+                <li><a href="#">DEPARTMENTS&nbsp;&nbsp;<i class="fa fa-sort-down"></i></a>
+                <ul id="de">
+                    <li id="row"><a href="#">Civil</a></li>
+                    <li id="row"><a href="#">Electronics</a></li>
+                    <li id="row"><a href="#">Mechanical</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+    </body>
+
+</html>

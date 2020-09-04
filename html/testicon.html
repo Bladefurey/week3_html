@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Icon</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+
+            }
+            nav{
+                background-color:grey;
+                width:100%;
+                height:80px;
+                position:fixed;
+
+            }
+            nav ul li{
+                list-style:none;
+                padding-right:20px;
+                padding-top:30px;
+                float:left;
+            }
+            nav ul li a{
+                text-decoration:none;
+                border-right:2px solid black;
+                padding-right:20px;
+            }
+            nav ul li a:hover{
+                display:block;
+                background-color:orange;
+            }
+            #dep li{
+                display:none;
+            }
+            nav ul li:hover ul{
+                display:block;
+            }
+            nav ul li:hover #def li{
+                display:block;
+                background-color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-home">&nbsp;&nbsp;Home</i></a></li>
+                <li><a href="#"><i class="fa fa-user-secret">&nbsp;&nbsp;Contacts</i></a></li>
+                <li><a href="#">Departments&nbsp;&nbsp;<i class="fab fa-accessible-icon"></i></a></li>
+                <ul id="dep">
+                    <li><a href="#">Civil</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Mechanical</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </body>
+</html>

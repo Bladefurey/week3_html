@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <style>
+            *{
+                margin:0;
+            }
+            nav{
+                position:fixed;
+                
+                
+            }
+            #main li{
+                
+                list-style:none;
+                float:left;
+                padding-left:15px;
+                margin-left:40px;
+                display:block;
+            }
+            #main li a{
+                text-decoration:none;
+            }
+            #main li a:hover{
+                color:red;
+                background-color:blue;
+            }
+            #sec{
+                display:none;
+                position:absolute;
+                left:130px;
+            }
+            #sec #r1{
+                background-color:green;
+                width:100px;
+                clear:left;
+            }
+            #main li:hover #sec{
+                display:block;
+            }
+            #sec #r1 a:hover{
+                background-color:cyan;
+            }
+            #r2{
+                display:none;
+                position:relative;
+                top:-20px;
+            }
+            #r2 #r3{
+                background-color:khaki;
+                clear:left;
+            }
+            #sec #r1:hover #r2{
+                display:block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul id="main">
+                <li><a href="#"><b>HOME</b></a></li>
+                <li><a href="#"><b>TUTORIALS</b></a>
+                        <ul id="sec">
+                            <li id="r1"><a href="#">HTML</a>
+                                <ul id="r2">
+                                    <li id="r3"><a href="#">html5</a></li>
+                                    <li id="r3"><a href="#">html4</a></li>
+                                </ul>
+                            </li>
+                            <li id="r1"><a href="#">CSS</a></li>
+                            <li id="r1"><a href="#">PHP/Mysql</a></li>
+                        </ul>
+                </li>
+                <li><a href="#"><b>ELECTRONICS</b></a></li>
+                <li><a href="#"><b>TECHNOLOGY</b></a></li>
+                <li><a href="#"><b>EDUCATION</b></a></li>
+                <li><a href="#"><b>NEWS</b></a></li>
+                <li><a href="#"><b>ABOUT US</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
